@@ -484,7 +484,7 @@ const destinationData = {
   };
   
 const corsOptions = {
-  origin: 'http://localhost:5173', // Your frontend URL
+  origin: 'https://heroic-lebkuchen-8664c2.netlify.app/', // Your frontend URL
   credentials: true, // Allow credentials (cookies, etc.)
 };
 
