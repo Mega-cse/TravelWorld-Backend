@@ -483,12 +483,13 @@ const destinationData = {
     },
   };
   
-const corsOptions = {
-  origin: 'https://heroic-lebkuchen-8664c2.netlify.app/', // Your frontend URL
-  credentials: true, // Allow credentials (cookies, etc.)
-};
 
-app.use(cors(corsOptions));
+  const allowedOrigins = ['https://heroic-lebkuchen-8664c2.netlify.app'];
+  app.use(cors({
+      origin: allowedOrigins,
+      credentials: true, // If you need to allow credentials (cookies, authorization headers, etc.)
+  }));
+// app.use(cors(corsOptions));
 
 
 app.use(cookieParser()); 
